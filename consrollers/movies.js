@@ -46,19 +46,7 @@ const getMoviesByColor = async (req,res) => {
         if(movies.length==0){
             return res.status(404).json({msg: `No movie with color : ${movieColor}`});
         }
-        let list = '';
-        movies.forEach(m => {
-            list+=`<li>${m.name}</li>`;
-        });
-        res.status(200).type('html').send(
-            `
-            <html><body>   
-            <h3>${movieColor}</h3>
-            <ul>
-            ${list}
-            </ul>
-            </body></html>
-            `);
+        res.status(200).json(movies);
     } catch (error){
         console.error(error);
         res.status(500).json({err: JSON.stringify(error)});
