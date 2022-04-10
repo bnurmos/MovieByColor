@@ -145,8 +145,13 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
+ .card {
   border-style: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 69%;
+  height: 60%;
 }
 
 /* Forms

@@ -16,23 +16,22 @@ const MovieSchema = new mongoose.Schema({
        },
     year: {
         type:String,
-        default:false,
     },
     color: {
         type:String,
-        default:false,
     },
     watched: {
         type:Boolean,
         default:false,
     },
     starring: {
-        type:String,
-        default:false,
+        type:String
     },
     synopsis: {
         type:String,
-        default:false,
+    },
+    img: {
+        type:String,
     },
 
 });
