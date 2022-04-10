@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const {createFeedback, getMoviesByColor, getAllMovies} = require ('../consrollers/movies')
+const {createFeedback, getMoviesByColor, getAllMovies, createMovie, updateMovie, deleteMovie} = require ('../consrollers/movies')
 
 
 // router.route('/api/v1/tasks').get(getAllTasks).post(createTask);
@@ -10,7 +10,7 @@ const {createFeedback, getMoviesByColor, getAllMovies} = require ('../consroller
 
 router.route('/feedback').post(createFeedback);
 // router.route('/movie').get(getAllMovies);
-router.route('/movies/:color').get(getMoviesByColor);
+router.route('/movies/:color').get(getMoviesByColor).post(createMovie).patch(updateMovie).delete(deleteMovie);
 
 
 
