@@ -124,11 +124,12 @@ h5 {
 }
 
 .about-h, h3, h1 {
-  color: whitesmoke;
-  text-shadow: 2px 1px;
+  color: rgb(53, 53, 53);
+  text-shadow: 1px 1px;
   text-align:center;
   margin-top: 2.5rem;
   text-decoration: double;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   
 }
 
@@ -180,9 +181,9 @@ button.hipster:hover {
   background: var(--primary-100);
   box-shadow: var(--shadow-2);
 }
-button.block {
-  width: 100%;
-}
+
+
+
 
 /*************
      FORM 
